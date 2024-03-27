@@ -1,0 +1,141 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+    
+
+@font-face{
+    font-family: harryp;
+    src: url(HARRYP__.TTF);
+}
+h1, h2{
+    font-weight: 1000;
+    color: #000000;
+    font-family: harryp;
+    src: url(HARRYP__.TTF);
+}
+
+
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: #ffcccc;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 15px;
+    animation: surgir 3s ease;
+    animation-timeline: view(3);
+    animation-range: cover 50% cover 50%;
+}
+
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: #0e0202;
+}
+
+section.modulo h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(7, 6, 6);
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: #f8f8f8;
+    
+}
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+section.modulo.parallax h1{
+    color: rgb(238, 229, 229);
+    text-align: center;
+    font-size: 400%;
+    text-transform: uppercase;
+    z-index: 50;
+    text-shadow: 20px 20px 20px #000000;
+}
+section.modulo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0)50%, #000000 100%);
+}
+
+
+
+
+section.modulo.parallax-1{
+    background-image: url(triogif.png); 
+}
+section.modulo.parallax-2{
+    background-image: url(espada.png);
+}
+section.modulo.parallax-3{
+    background-image: url(camara.png);
+}
+footer img{
+    height: 60px;
+    width: 60px;
+}
+footer{
+    text-align: center;
+    font-family:harryp;
+    src: url(HARRYP__.TTF);
+    color: #010108;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 450px){
+    section.modulo p{
+       margin-top: 0;
+        text-align:right;
+        text-align: left;
+          font-size: 1em;
+          color: #0e0202;
+          text-transform: uppercase;
+      }
+      footer img{
+        height: 40px;
+        width: 40px;
+    }
+    footer{
+         font-size: 24px;
+    }
+
+}
